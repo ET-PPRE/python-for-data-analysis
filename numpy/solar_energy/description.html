@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<script
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+type="text/javascript">
+</script>
+
+<body>
+<h4 id="task">🎯 Task</h4>
+
+<p>In this excercise solar irradiance data from a <code>.txt</code> file
+should be read and used to perform basic calculations.</p>
+<h5 id="part-a">Part A</h5>
+<p>Extract data from the file <strong>solar_irradiance.txt</strong>,
+which you can find in this directory, into a NumPy array called
+<code>irradiance_data</code>. The array should only contain irradiance
+data, not the timestamps.</p>
+<p><strong>Note:</strong> For this exercise, remove the ‘Hour’ column
+and the header from the data.</p>
+<h5 id="part-b">Part B</h5>
+<p>Calculate the <strong>average solar irradiance per day</strong> in
+W/m² from the array <code>average_irradiance</code>. Save the result in
+a NumPy array named <code>average_irradiance</code> and print the
+result.</p>
+<h5 id="part-c">Part C</h5>
+<p>Calculate the Daily Energy Output of a solar power plant in MWh,
+using the following equation:</p>
+<p><span class="math display">\[
+\text{Energy Output (MWh)} = \frac{G \times A \times \eta}{10^6} \times
+t \times n
+\]</span></p>
+<p>Where:</p>
+<ul>
+<li><p><span class="math inline">\(A  = 1.8 \text{m}^2\)</span> (area of
+one PV module)</p></li>
+<li><p><span class="math inline">\(\eta = 0.2\)</span>
+(efficiency)</p></li>
+<li><p><span class="math inline">\(n = 10.000\)</span> (number of PV
+modules)</p></li>
+<li><p><span class="math inline">\(t = 24\)</span> hours/day</p></li>
+<li><p><span class="math inline">\(G\)</span> is the average irradiance
+in W/m² (taken from the irradiance data)</p></li>
+</ul>
+<p>Save the results in an array called
+<code>daily_energy_output_pv</code>, and print the result.</p>
+
+<h4 id="restrictions">🔒 Restrictions</h4>
+<ul>
+<li><strong>Use only numpy</strong></li>
+<li>Follow the exact naming (<code>irradiance_data</code>,
+<code>average_irradiance</code>,
+<code>daily_energy_output_pv</code>).</li>
+</ul>
+</body>
+</html>

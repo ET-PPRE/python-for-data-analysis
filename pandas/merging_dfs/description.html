@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<body>
+
+<h4 id="task">🎯 Task</h4>
+
+<p>Merge two DataFrames on a common key and perform basic data analysis.</p> 
+
+<strong>1. Create the following DataFrames</strong>
+<ul>
+  <li><strong>DataFrame A</strong><br>
+    Columns: <code>['Employee_ID', 'Name']</code><br>
+    Data:
+    <pre>
+[[1, 'Alice'],
+ [2, 'Bob'],
+ [3, 'Charlie']]
+    </pre>
+  </li>
+  <li><strong>DataFrame B</strong><br>
+    Columns: <code>['Employee_ID', 'Salary']</code><br>
+    Data:
+    <pre>
+[[1, 70000],
+ [2, 80000],
+ [4, 90000]]
+    </pre>
+  </li>
+</ul>
+
+<strong>2. Merge the DataFrames</strong>
+<ul>
+  <li>Merge <strong>DataFrame A</strong> and <strong>DataFrame B</strong> on the <code>Employee_ID</code> column using an <strong>inner join</strong>.</li>
+  <li>Store the result in a new DataFrame called <code>merged_df1</code>.</li>
+</ul>
+
+<strong>3. Perform Analysis</strong>
+<ul>
+  <li>Calculate the <strong>average salary</strong> from <code>merged_df1</code>.</li>
+  <li>Display:
+    <ul>
+      <li>The merged DataFrame <code>merged_df1</code></li>
+      <li>The average salary</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="restrictions">🔒 Restrictions</h4>
+<ul>
+<li><strong>Use only pandas</strong></li>
+<li>Follow the exact naming (<code>A</code>, <code>B</code>,
+<code>['Employee_ID', 'Name', 'Salary']</code>, <code>merged_df1</code>, <code>average_salary</code>).</li>
+</ul>
+</body>
+</html>

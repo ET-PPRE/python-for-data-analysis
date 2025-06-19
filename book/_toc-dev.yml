@@ -1,0 +1,13 @@
+format: jb-book
+root: getting_started/getting_started
+
+chapters:
+  - file: intro_to_python/intro_to_python
+  - file: functions_loops/function_loops
+  - file: data_structures/data_structures
+  - file: numpy/numpy
+  - file: pandas/pandas
+  - file: matplotlib/matplotlib
+
+  - url: https://ppre-digital.uol.de/assignments
+    title: Go to Assignments

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<script
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+type="text/javascript">
+</script>
+
+<body>
+<h4 id="task">🎯 Task</h4>
+
+<p>Assume wind with uniform wind speed <span class="math inline">\(u_0 =
+9\ \text{m/s}\)</span> is hitting a <span class="math inline">\(6\
+\text{MW}\)</span> wind turbine with rotor diameter <span
+class="math inline">\(D = 154\ \text{m}\)</span>, located at coordinate
+<span class="math inline">\(x = 0\)</span>. For this wind speed the
+thrust coefficient below is <span class="math inline">\(c_t =
+0.763\)</span>.</p>
+<p>According to the paper [1], the wind speed <span
+class="math inline">\(u\)</span> at a distance <span
+class="math inline">\(x\)</span> behind the turbine can be modelled
+as</p>
+<p><span class="math display">\[ u(x) = u_0 \times \sqrt{1 -
+\left(\frac{c_t}{8}\right) \left( \frac{D}{\sigma(x)} \right)^2}
+\]</span></p>
+<p><span class="math display">\[ \sigma(x) = kx +
+\frac{\sqrt{\beta}D}{4} \]</span></p>
+<p><span class="math display">\[ \beta = \frac{1 + \sqrt{1 - c_t}}{2
+\sqrt{1 - c_t}} \]</span></p>
+<p><span class="math display">\[ k = 0.02 \]</span></p>
+
+<p><strong>After how many meters behind the rotor has the wind speed
+recovered to at least $8.95 m/s?</strong> Define functions
+<code>sigma(x)</code> and <code>u(x)</code> *and find out by
+increasing <span class="math inline">\(x\)</span> in a loop using the
+formulas above. Save the result in a variable called
+<code>recovery_distance</code>.</p>
+
+<h4 id="restrictions">🔒 Restrictions</h4>
+
+<ul>
+<li><strong>Do not use any external libraries</strong></li>
+<li>Follow the exact naming (<code>sigma(x)</code>, <code>u(x)</code>,
+<code>recovery_distance</code>).</li>
+</ul>
+
+<p><strong>References</strong><br> [1] M. Bastankhah and F. Porté-Agel.
+A new analytical model for wind-turbine wakes. Renewable Energy,
+70:116–123, 2014.</p>
+</body>
+</html>

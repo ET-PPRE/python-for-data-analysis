@@ -1,0 +1,136 @@
+# toc.yml
+
+############ IMPORTANT ############
+# TOC File Structure Guidelines for Learning Platform
+#
+# Each top-level entry under "chapters" is a course chapter.
+# Each chapter must include:
+#     - slug: unique identifier (used for URL routing or database lookup)
+#     - title: human-readable title of the chapter
+#     - order: integer for display ordering (starts from 1, no gaps)
+# Each chapter can contain a list of "assignments":
+#     - Each assignment must also have:
+#         - slug: unique per assignment (use lowercase + underscores)
+#         - title: display name of the assignment
+#         - order: integer for ordering within that chapter
+#         - book: location of file inside book folder including filename without extension/file-type
+#         - points: number of points the assignment carries
+#         - difficulty: one of: "Easy", "Intermediate", "Hard"
+#         - publist_at: ISO 8601 string when this assignment becomes visible (e.g. "2025-10-15T08:00:00")
+#
+# Do NOT skip order numbers (e.g. use 1,2,3... not 1,3,5)
+# Order numbers are per-level (chapter vs assignment)
+# Keep slugs consistent with filenames or database entries
+# Avoid special characters or spaces in slugs (use snake_case)
+# Titles can contain spaces and capitalization (for UI display)
+#
+# This file is used by:
+#     - Backend serializers / database seeders
+#     - Dynamic chapter loading and progress tracking
+#
+# Example Structure:
+# chapters:
+#   - slug: chapter_slug
+#     title: Chapter Title
+#     order: 1
+#     book: functions_loops/function_loops
+#     assignments:
+#       - slug: assignment_slug
+#         title: Assignment Title
+#         order: 1
+#         points: 10
+#         difficulty: Easy
+#         publish_at: "2025-10-11T14:00:00"
+#
+###################################
+
+
+chapters:
+  - slug: getting_started
+    title: Getting Started
+    order: 0
+    book: getting_started/getting_started
+  - slug: intro_python
+    title: Intro to Python
+    order: 1
+    book: intro_to_python/intro_to_python
+    assignments:
+      - slug: hello_world
+        title: Hello World!
+        order: 1
+        points: 10
+        difficulty: Easy
+        publish_at: "2025-10-11T15:30:00"
+
+      - slug: area_circle_sphere
+        title: Area
+        order: 2
+        points: 10
+        difficulty: Easy
+        publish_at: "2025-10-11T15:30:00"
+
+  - slug: function_loops_classes
+    title: Functions and Loops
+    order: 2
+    book: functions_loops/function_loops
+    assignments:
+      - slug: check_even_odd
+        title: Check for even and odd numbers
+        order: 1
+        points: 15
+        difficulty: Easy
+        publish_at: "2025-10-11T16:55:00"
+        publish_until:
+
+      - slug: check_vowels
+        title: Check vowels in text
+        order: 2
+        points: 15
+        difficulty: Easy
+        publish_at: "2025-10-11T16:55:00"
+        publish_until:
+
+      - slug: series
+        title: series
+        order: 3
+        points: 20
+        difficulty: Intermediate
+        publish_at: "2025-10-11T17:15:00"
+        publish_until:
+
+      - slug: wind_wake
+        title: Wind wakes
+        order: 4
+        points: 20
+        difficulty: Intermediate
+        publish_at: "2025-10-21T09:30:00"
+        publish_until:
+
+  - slug: data_structures
+    title: Data Structures
+    order: 3
+    book: data_structures/data_structures
+    assignments:
+      - slug: vector
+        title: Vectors
+        order: 1
+        points: 20
+        difficulty: Intermediate
+        publish_at: "2025-10-11T15:30:00"
+        publish_until:
+
+      - slug: grades
+        title: Grades
+        order: 2
+        points: 15
+        difficulty: Intermediate
+        publish_at: "2025-10-11T15:30:00"
+        publish_until:
+
+      - slug: solar_panels
+        title: Solar Panels
+        order: 3
+        points: 20
+        difficulty: Intermediate
+        publish_at: "2025-10-11T15:30:00"
+        publish_until:
