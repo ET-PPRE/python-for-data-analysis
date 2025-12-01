@@ -45,10 +45,10 @@
 ###################################
 
 chapters:
-  - slug: intro_programming
-    title: Intro to Programming
+  - slug: getting_started
+    title: Getting Started
     order: 0
-    book: intro_to_python/intro_to_python
+    book: getting_started/getting_started
 
   - slug: intro_python
     title: Intro to Python
@@ -60,18 +60,155 @@ chapters:
         order: 1
         points: 10
         difficulty: Easy
-        publish_at: "2025-10-11T15:30:00"
+        publish_at: "2025-11-15T16:00:00"
+        is_exam: false
 
       - slug: area_circle_sphere
         title: Area
         order: 2
         points: 10
         difficulty: Easy
-        publish_at: "2025-10-11T15:30:00"
+        publish_at: "2025-11-17T15:30:00"
+        is_exam: false
 
-      - slug: co2_calculation
-        title: CO2 Calculation
-        order: 3
+  - slug: function_loops_classes
+    title: Functions and Loops
+    order: 2
+    book: functions_loops/function_loops
+    assignments:
+      - slug: check_even_odd
+        title: Check for even and odd numbers
+        order: 1
         points: 15
         difficulty: Easy
-        publish_at: "2025-10-11T15:30:00"
+        publish_at: "2025-11-17T15:30:00"
+        publish_until: "2025-11-12T20:25"
+        is_exam: false
+
+      - slug: check_vowels
+        title: Check vowels in text
+        order: 2
+        points: 15
+        difficulty: Easy
+        publish_at: "2025-11-17T15:30:00"
+
+      - slug: series
+        title: series
+        order: 3
+        points: 20
+        difficulty: Intermediate
+        publish_at: "2025-11-17T15:30:00"
+
+      - slug: wind_wake
+        title: Wind wakes
+        order: 4
+        points: 20
+        difficulty: Intermediate
+        publish_at: "2025-11-17T15:30:00"
+
+  - slug: data_structures
+    title: Data Structures
+    order: 3
+    book: data_structures/data_structures
+    assignments:
+      - slug: vector
+        title: Vectors
+        order: 1
+        points: 20
+        difficulty: Intermediate
+        publish_at: "2025-11-17T15:30:00"
+        publish_until:
+
+      - slug: grades
+        title: Grades
+        order: 2
+        points: 15
+        difficulty: Intermediate
+        publish_at: "2025-11-17T15:30:00"
+        publish_until:
+
+      - slug: solar_panels
+        title: Solar Panels
+        order: 3
+        points: 20
+        difficulty: Intermediate
+        publish_at: "2025-11-17T15:30:00"
+        publish_until:
+
+  - slug: numpy
+    title: Numerical Python - Numpy
+    order: 4
+    book: numpy/numpy
+    assignments:
+      - slug: ndarrays
+        title: Working with ndarrays
+        order: 1
+        points: 15
+        difficulty: Easy
+        publish_at: "2025-11-17T15:30:00"
+
+      - slug: ndarray_shapes
+        title: ndarrays Shapes
+        order: 2
+        points: 15
+        difficulty: Easy
+        publish_at: "2025-11-17T15:30:00"
+
+      - slug: matrixes
+        title: Working with matrixes
+        order: 3
+        points: 25
+        difficulty: Intermediate
+        publish_at: "2025-11-17T15:30:00"
+
+  - slug: pandas
+    title: Python DataFrames - Pandas
+    order: 5
+    book: pandas/pandas
+    assignments:
+      - slug: merging_dfs
+        title: Merging DataFrames
+        order: 1
+        points: 10
+        difficulty: Easy
+        publish_at: "2025-11-17T15:30:00"
+
+      - slug: data_analysis
+        title: Data Analysis
+        order: 2
+        points: 20
+        difficulty: Easy
+        publish_at: "2025-11-17T15:30:00"
+
+      - slug: data_inspection
+        title: Data Inspection
+        order: 3
+        points: 20
+        difficulty: Intermediate
+        publish_at: "2025-11-17T15:30:00"
+
+  - slug: matplotlib
+    title: Data Plotting - Matplotlib
+    order: 6
+    book: matplotlib/matplotlib
+    assignments:
+      - slug: plotting
+        title: Plotting with Matplotlib
+        order: 1
+        points: 10
+        difficulty: Easy
+        publish_at: "2025-11-17T15:30:00"
+
+      - slug: wind_speed_plotting
+        title: Timeseries Plotting 
+        order: 2
+        points: 10
+        difficulty: Easy
+        publish_at: "2025-11-17T15:30:00"
+
+      - slug: bar_plot
+        title: Bar Plot with Error Bars
+        order: 3
+        points: 20
+        difficulty: Intermediate
+        publish_at: "2025-11-17T15:30:00"
